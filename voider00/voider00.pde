@@ -5,7 +5,8 @@ char flag = '0';
 void setup() {
     size(900,600);
 //  size(1280,720);
-    camera = new Capture(this, width, height, 12);
+    camera = new Capture(this, width, height, "pipeline:autovideosrc");
+//    camera = new Capture(this, width, height, 12);
     camera.start();
     smooth();
     noStroke();
