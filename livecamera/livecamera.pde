@@ -6,7 +6,8 @@ int b=1;
 
 void setup() {
   size(900,600);
-  camera = new Capture(this, width, height, 12);
+  camera = new Capture(this, width, height, "pipeline:autovideosrc");
+ // camera = new Capture(this, width, height, 12);
   camera.start();
   smooth();
   noStroke();
